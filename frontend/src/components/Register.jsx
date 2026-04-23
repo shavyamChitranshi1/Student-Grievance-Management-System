@@ -21,7 +21,7 @@ const register=async()=>{
 try{
 
 await axios.post(
-"http://localhost:5000/api/register",
+"https://student-grievance-management-system-392g.onrender.com/api/register",
 data
 );
 
@@ -30,9 +30,9 @@ alert("Registered Successfully");
 }
 catch(error){
 
-console.log(error.response);
+alert("Email may already exist");
 
-alert(JSON.stringify(error.response.data));
+console.log(error);
 
 }
 

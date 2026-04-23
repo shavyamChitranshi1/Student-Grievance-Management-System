@@ -12,7 +12,7 @@ const token=localStorage.getItem("token");
 const fetchGrievances=async()=>{
 
 const res=await axios.get(
-"http://localhost:5000/api/grievances",
+"https://student-grievance-management-system-392g.onrender.com/api/grievances",
 {
 headers:{
 "auth-token":token
@@ -34,7 +34,7 @@ fetchGrievances();
 const submitGrievance=async()=>{
 
 await axios.post(
-"http://localhost:5000/api/grievances",
+"https://student-grievance-management-system-392g.onrender.com/api/grievances",
 
 {
 title:title,
@@ -58,7 +58,7 @@ fetchGrievances();
 const deleteGrievance=async(id)=>{
 
 await axios.delete(
-`http://localhost:5000/api/grievances/${id}`,
+`https://student-grievance-management-system-392g.onrender.com/api/grievances/${id}`,
 {
 headers:{
 "auth-token":token
@@ -75,7 +75,7 @@ fetchGrievances();
 const updateGrievance=async(id)=>{
 
 await axios.put(
-`http://localhost:5000/api/grievances/${id}`,
+`https://student-grievance-management-system-392g.onrender.com/api/grievances/${id}`,
 
 {
 status:"Resolved"

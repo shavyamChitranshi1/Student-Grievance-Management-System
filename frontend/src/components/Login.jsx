@@ -18,7 +18,7 @@ setData({...data,[e.target.name]:e.target.value});
 const login=async()=>{
 
 const res=await axios.post(
-"http://localhost:5000/api/login",
+"https://student-grievance-management-system-392g.onrender.com/api/login",
 data
 );
 
